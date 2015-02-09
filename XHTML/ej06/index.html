@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de etiqueta select</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+<h1>Datos seleccionables</h1>
+<form action="http://192.168.1.65/dam-2015/XHTML/post.php" method="POST" enctype="multipart/form-data">
+
+	<fieldset>
+		<legend>Datos básicos</legend>
+
+		<label for="nombre">Nombre</label><br>
+		<input type="text" name="nombre" id="nombre"><br>
+
+		<label for="descripcion">Descripción</label><br>
+		<textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea><br>
+
+		<label for="foto"></label>
+		<input type="file" name="foto" id="foto"><br>
+
+		<input type="checkbox" name="contador" id="contador">
+		<label for="contador">Añadir contador de visitas</label><br>
+
+	</fieldset>
+	
+	<fieldset>
+		<legend>Datos económicos</legend>
+<div>
+		<label for="precio">Precio</label>
+		<input type="text" id="precio" name="precio">€
+
+		<label for="impuestos">Impuestos</label>
+		<select name="impuestos" id="impuestos">
+			<option value="4">4%</option>
+			<option value="7">7%</option>
+			<option value="21">21%</option>	
+		</select>
+		</div>
+		<br>
+<div>
+		<label for="promocion">Promoción</label> <br>
+		<input type="radio" id="promocion" name="promocion" value="Ninguno" checked="checked"> Ninguno <br>
+		<input type="radio" id="promocion" name="promocion" value="transportegratuíto"> Transporte gratuíto <br>
+		<input type="radio" id="promocion" name="promocion" value="descuento5"> Descuento 5% <br>
+</div>
+
+	</fieldset>
+
+	<input type="submit" name="enviar" value="Enviar">
+</form>
+	
+</body>
+</html>
