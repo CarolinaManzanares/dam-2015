@@ -5,78 +5,61 @@
 	<meta charset="UTF-8"
 </head>
 <body>
-<div id="wrapper">
-	<div id="header">
-		<div class="titulo_blog">
-			<h1>My Weblog</h1>
-		</div>
-		<div class="descripcion_blog">
-			<p>A lot of effort went into making this effortless</p>
-		</div>
-		<div class="menu">
-			<ul>
-				<li>home</li>
-				<li>blog</li>
-				<li>gallery</li>
-				<li>about</li>
-			</ul>			
-		</div>
+<div class="wrapper">
+	<div class="header">
+		<h1>My Weblog</h1>	
+		<p>A lot of effort went into making this effortless</p>
+		<ul class="menu">
+			<li>home</li>
+			<li>blog</li>
+			<li>gallery</li>
+			<li>about</li>
+		</ul>			
 	</div>	
-	<div id="body">
+	<div class="body">	
+		
 		<div class="post">
-			<div id="cabecera_post">
-				<div class="titulo_post">
-					<h2><a href="#">Travel day</a></h2>
-				</div>
-				<div class="fecha">
-					<p>October 22, 2011</p>
-				</div>
-				<div class="info">
-					<a href="#">John Doe</a>, <a href="#">Comments</a>
-				</div>
+			<div class="cabecera_post">
+				<h2><a href="post.html">Travel day</a></h2>
+				<p span>October 22, 2011</span>
+				<span><a href="#">John Doe</a>, <a href="post.html#comments">Comments</a></span>
 			</div>
-			<div id="contenido_post">
+			<div class="contenido_post">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit fugiat, odit, sint possimus officia mollitia totam, consequuntur expedita nihil atque velit ea ratione placeat provident facilis cum repellendus non doloremque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo amet quos consectetur mollitia, ducimus doloribus nulla quam deserunt earum, illo esse autem quo, alias error, ut dolore eligendi sapiente ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ipsum impedit, voluptate? Blanditiis, inventore, omnis. Quae minima recusandae ipsam veritatis aspernatur dicta dolorum, facilis consectetur. Dolorem, quae quos ut eligendi.</p>
 			</div>
 		</div>
 
 		<div class="post">
-			<div id="cabecera_post">
-				<div class="titulo_post">
-					<h2><a href="#">I'm going to Prague!</a></h2>
-				</div>
-				<div class="fecha">
-					<p>October 17, 2011</p>
-				</div>
-				<div class="info">
-					<a href="#">John Doe</a>, <a href="#">Comments</a>
-				</div>
+			<div class="cabecera_post">
+				<h2><a href="#">I'm going to Prague!</a></h2>
+				<span>October 17, 2011</span>
+				<span><a href="#">John Doe</a>, <a href="#">Comments</a></span>
 			</div>
-			<div id="contenido_post">
+			<div class="contenido_post">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit fugiat, odit, sint possimus officia mollitia totam, consequuntur expedita nihil atque velit ea ratione placeat provident facilis cum repellendus non doloremque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo amet quos consectetur mollitia, ducimus doloribus nulla quam deserunt earum, illo esse autem quo, alias error, ut dolore eligendi sapiente ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ipsum impedit, voluptate? Blanditiis, inventore, omnis. Quae minima recusandae ipsam veritatis aspernatur dicta dolorum, facilis consectetur. Dolorem, quae quos ut eligendi.</p>
 			</div>
 		</div>
+		<div class="archive">
+			<ol>
+				<li>
+					<span>October</span>
+					<ol>
+						<li><span>5</span><a href="">Lorem ipsum dolor sit amet</a></li>	
+					</ol>
+				</li>
+				<li>
+					<span>Setember</span>
+					<ol>
+						<li><span>21</span><a href="">Lorem ipsum dolor sit amet</a></li>
+						<li><span>7</span><a href="">Lorem ipsum dolor sit amet</a></li>	
+					</ol>
+				</li>
+			</ol>		
+		</div>
 	</div>
-	<div id="archive">
-		<dl>
-			<dt class="mes">Octouber</dt>
-			<dd class=items> 5 <a href="#">Lorem ipsum dolor sit amet</a></dd>
-			<dd class=items> 10 <a href="#">Lorem ipsum dolor sit amet</a></dd>
-
-			<dt class="mes">September</dt>
-			<dd class=items> 3 <a href="#">Lorem ipsum dolor sit amet</a></dd>
-			
-			<dt class="mes">August</dt>
-			<dd class=items> 8 <a href="#">Lorem ipsum dolor sit amet</a></dd>
-			<dd class=items> 13 <a href="#">Lorem ipsum dolor sit amet</a></dd>
-			<dd class=items> 27 <a href="#">Lorem ipsum dolor sit amet</a></dd>
-		</dl>
-	</div>
-	<div id="footer">
+	<div class="footer">
 		<p>2011 <a href="#">John Doe</a></p>
 	</div>
-		
-	
 </div>
 	
 </body>
