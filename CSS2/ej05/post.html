@@ -29,8 +29,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit fugiat, odit, sint possimus officia mollitia totam, consequuntur expedita nihil atque velit ea ratione placeat provident facilis cum repellendus non doloremque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo amet quos consectetur mollitia, ducimus doloribus nulla quam deserunt earum, illo esse autem quo, alias error, ut dolore eligendi sapiente ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ipsum impedit, voluptate? Blanditiis, inventore, omnis. Quae minima recusandae ipsam veritatis aspernatur dicta dolorum, facilis consectetur. Dolorem, quae quos ut eligendi.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, odio! Placeat eaque, velit magnam enim, beatae incidunt autem dolor mollitia voluptatem in voluptas hic, explicabo ad architecto, quaerat fuga aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit deserunt laudantium nobis rem repellendus sapiente nisi, deleniti cupiditate magnam recusandae asperiores tempora voluptate labore. Sapiente ad quia architecto similique explicabo!</p>
 				</div>
 
-			</div>
-
+			</div class="row"
 			<div class="comentarios">
 				<h3 class="h3">Comments</h3>
 				<div class="comentario clearfix"> <!-- también podría hacerse una lista de comentarios -->
@@ -56,21 +55,26 @@
 				
 				<div class="formcomentario">
 					<h3 class="h3">Leave a comment</h3>
-					<form action="">
-						<div>
+					<form action="" class="form-rows">
+						<div class="row">
 							<label for="name">Name</label>
 							<input type="text" id="name" name="name">
 						</div>
-						<div><label for="mail">Mail (will 	not be published)</label>
+						<div class="row">
+							<label for="mail">Mail (will 	not be published)</label>
 							<input type="text" id="mail" name="mail">
 						</div>
-						<div><label for="website">Website</label>
-						<input type="text" id="website" name="website">
+						<div class="row">
+							<label for="website">Website</label>
+							<input type="text" id="website" name="website">
 						</div>
-						<div><label for="comment">Comment</label>
-						<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+						<div class="row">
+							<label for="comment">Comment</label>
+							<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
 						</div>
-						<input type="submit" value="POST COMMENT" class="btn">
+						<div class="row">
+							<input type="submit" value="POST COMMENT" class="btn">
+						</div>
 					</form>
 				</div>
 			</div>

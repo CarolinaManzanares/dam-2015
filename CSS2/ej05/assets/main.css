@@ -144,4 +144,24 @@ h3, .h3{
     width: 90%;
 
  }
+
+.formcomentario input,
+.formcomentario textarea {
+border: 1px solid #ccc;
+padding: 5px;
+width: 50%;
+}
+
+.formcomentario .row {
+margin-bottom: 10px;
+}
+
+.form-rows input,
+.form-rows textarea,
+.form-rows label {
+display: block;
+margin: 5px 0;
+}
+
+
  
