@@ -1,0 +1,51 @@
+/*first-child,
+first-of-type,
+nth-of-type,
+nth-last-of-type,
+last-of-type y
+last-child*/
+
+/*el primer hijo que es li*/
+li:first-child{
+    color: blue;
+}
+
+li:first-of-type{
+    color: blue;
+}
+
+li:nth-child(1){
+    color: blue;
+}
+
+li:nth-of-type(1){
+    color: blue;
+}
+ /**/
+li:nth-child(3){
+    font-size: 1.5em;
+}
+
+li:nth-of-type(3){
+    font-size: 1.5em;
+}
+/**/
+li:last-child{
+    color: red;
+}
+
+li:last-of-type{
+    color:red;
+}
+
+li:nth-child(n){
+    color:red;
+}
+
+li:nth-of-type(n){
+    color:red;
+}
+
+.wrapper .last:first-child;{
+    color:blue;
+} /*esto no devuelve nada porque el primer hijo de wrapper no es last*/
