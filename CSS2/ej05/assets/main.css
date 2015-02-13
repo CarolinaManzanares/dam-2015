@@ -163,5 +163,42 @@ display: block;
 margin: 5px 0;
 }
 
+table{
+    width: 100%;
+    border-collapse: collapse;
+ }
+.data-table{
+    border: 3px solid #CCC;
+}
 
- 
+.data-table th,
+.data-table td{
+    padding: 3px 5px;
+}
+
+.data-table thead,
+.data-table tfoot{
+    background-color: #CCC;
+}
+
+.data-table thead{
+    text-align: left;
+}
+
+.data-table tfoot{
+    text-align: right;
+}
+
+}
+.txt-right{
+    text-align: right;
+}
+
+/*para dar una anchura a la columna*/
+.data-table .price-th{
+    width: 70px;
+}
+
+.data-table td{
+    border-bottom: 1px solid #CCC;
+}
