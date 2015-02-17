@@ -1,0 +1,49 @@
+.start {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 5em;
+}
+
+#clock {
+    position: relative;
+    width: 378px;
+    height: 378px;
+    background-image: url('../img/clockFace.png');
+    left: 50%;
+    margin: 5em 0 0 -189px;
+}
+
+#clock div { 
+position: absolute;
+}
+
+#second {
+    animation-duration: 60s;
+    animation-name: reloj;
+}
+#clock .minute {
+animation-duration: 3600s;
+}
+#clock .hour {
+animation-duration: 43200s;
+}
+/* ANIMACIONES Y TRANSFORMACIONES */
+@keyframes reloj {
+  from {
+    transform: rotate(90);
+  }
+
+/*25% {
+transform: rotate(90deg);
+}
+50% {
+transform: rotate(180deg);
+}
+75% {
+transform: rotate(270deg);
+}*/
+to {
+transform: rotate(180deg);
+}
+}
