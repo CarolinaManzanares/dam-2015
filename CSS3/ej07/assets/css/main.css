@@ -16,34 +16,29 @@
 
 #clock div { 
 position: absolute;
+
+animation-name: reloj;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
 }
 
+/* ANIMACIONES Y TRANSFORMACIONES */
 #second {
     animation-duration: 60s;
-    animation-name: reloj;
 }
-#clock .minute {
-animation-duration: 3600s;
+#minute {
+    animation-duration: 3600s;
 }
-#clock .hour {
-animation-duration: 43200s;
+#hour {
+    animation-duration: 43200s;
 }
-/* ANIMACIONES Y TRANSFORMACIONES */
+
 @keyframes reloj {
   from {
-    transform: rotate(90);
-  }
+        transform: rotate(0deg);
+    }
 
-/*25% {
-transform: rotate(90deg);
-}
-50% {
-transform: rotate(180deg);
-}
-75% {
-transform: rotate(270deg);
-}*/
-to {
-transform: rotate(180deg);
-}
+    to {
+        transform: rotate(360deg);
+    }
 }
