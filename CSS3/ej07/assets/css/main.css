@@ -15,22 +15,24 @@
 }
 
 #clock div { 
-position: absolute;
+    position: absolute;
 
-animation-name: reloj;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
+    animation-name: reloj;
+    animation-iteration-count: infinite;
 }
 
 /* ANIMACIONES Y TRANSFORMACIONES */
 #second {
     animation-duration: 60s;
+    animation-timing-function: steps(60, end);
 }
 #minute {
     animation-duration: 3600s;
+    animation-timing-function: linear;
 }
 #hour {
     animation-duration: 43200s;
+    animation-timing-function: linear;
 }
 
 @keyframes reloj {

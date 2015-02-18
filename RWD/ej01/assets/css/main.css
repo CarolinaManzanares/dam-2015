@@ -1,0 +1,26 @@
+.main .well{
+    text-align: center;
+}
+
+.footer{
+    background-color: #222;
+    color: #AAA;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.features,.glyphicon{
+    font-size: 3em;
+}
+
+.features[class*="col-"]{
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px){
+    .main .well{text-align: left;}
+
+    .footer[class*="col-sm"]{
+        min-height: 400px;
+    }
+}
