@@ -33,12 +33,13 @@ body {
 }
 .view .mask {
    background-color: rgba(219,127,8, 0);
+   transition: background-color 1s linear, 0.3s;
 }
 .view img {
    display: block;
    position: relative;
    width: 300px;
-   transition: transform 0.2s linear 0.1s;
+   transition: transform 1s linear, 0.3s;
 }
 .view h2 {
    text-transform: uppercase;
@@ -50,7 +51,8 @@ body {
    background: rgba(0, 0, 0, 0.8);
    margin: 20px 0 0 0;
    transform: translateY(-65px);
-   transition: transform 0.2s linear 0.1s;
+   transition: transform 1s linear, 0.3s;
+
 }
 .view p {
    font-family: Georgia, serif;
@@ -61,7 +63,7 @@ body {
    padding: 10px;
    text-align: center;
    transform: translateY(140px);
-   transition: transform 0.2s linear 0.1s;
+   transition: transform 1s linear, 0.3s;
 }
 .view a.info {
    display: inline-block;
@@ -72,28 +74,19 @@ body {
    text-transform: uppercase;
    box-shadow: 0 0 1px #000;
    opacity: 0;
-   transition: opacity 0.2s linear 0.1s;
+   transition: opacity 1s linear, 0.3s;
 }
 .view a.info: hover {
    box-shadow: 0 0 5px #000;
 }
 
 /* ANIMACIONES Y TRANSICIONES */
-.mask{
-  transition: background-color 1s linear 0.3s;
-}
-
-.view h1{
-
-}
-
-
 .view:hover .mask{
-  background-color: rgba(219,127,8, 0.8);
+  background-color: rgba(219,127,8, 0.7);
 }
 
 .view:hover img{
-  transform: scale(1.3);
+  transform: scale(1.4);
 }
 
 .view:hover h2{
