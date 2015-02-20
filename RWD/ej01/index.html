@@ -7,17 +7,23 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <div class="header navbar navbar-inverse">
+    <div class="header navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Blasting Off With Boostrap</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="tour.html">Tour</a></li>
+                    <li><a href="buy.html">Buy a Ticket</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -26,7 +32,7 @@
             <div class="well">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6"><!-- si es movil a 1 col, si es mas grande a 2 col-->
-                        <h2>Lorem ipsum dolor sit.</h2>
+                        <h1 class="h2">Lorem ipsum dolor sit.</h2>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque aliquid, distinctio incidunt, voluptates animi eum excepturi officia magnam, ullam est autem. Molestiae dolores vero unde aut quo ut facilis!</p>
                         <a href="tour.html" class="btn btn-default">Take a Tour</a>
                         <a href="ticket.html" class="btn btn-primary">Buy a Ticket</a>
@@ -38,17 +44,17 @@
             </div>
 
             <div class="row text-center">
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0">
                     <span class="glyphicon glyphicon-briefcase features"></span>
                     <h3>Lorem ipsum dolor sit amet.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sapiente, hic excepturi cum quos atque aperiam sed dolorem distinctio eveniet nesciunt sequi aliquam quod a vitae! Veritatis temporibus animi neque?</p>
                 </div>
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-6 col-sm-4">
                 <span class="glyphicon glyphicon-random features"></span>
                     <h3>Lorem ipsum dolor sit amet.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sapiente, hic excepturi cum quos atque aperiam sed dolorem distinctio eveniet nesciunt sequi aliquam quod a vitae! Veritatis temporibus animi neque?</p>
                 </div>
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-6 col-sm-4">
                 <span class="glyphicon glyphicon-send features"></span>
                     <h3>Lorem ipsum dolor sit amet.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sapiente, hic excepturi cum quos atque aperiam sed dolorem distinctio eveniet nesciunt sequi aliquam quod a vitae! Veritatis temporibus animi neque?</p>
@@ -100,7 +106,10 @@
         </div>
         
     </div>
-
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
     
 </body>
 </html>
