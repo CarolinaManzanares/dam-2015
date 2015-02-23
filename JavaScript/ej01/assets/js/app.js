@@ -7,7 +7,7 @@
                 var num = parseInt(dni);
 
                 if (num >= 0 && num <= 99999999){
-                    var char = dni.charAt(dni.length-1).toUpperCase; //o var  char = dni[8];
+                    var char = dni.charAt(dni.length-1).toUpperCase(); //o var  char = dni[8];
                     ok = char == letras[num % 23];
                 }
 
