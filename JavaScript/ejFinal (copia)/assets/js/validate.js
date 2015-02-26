@@ -4,11 +4,7 @@ HTMLFormElement.prototype.validate = function(){
     var validador = {
         
         required : function(val){
-            // var ok = (val === null || val.length === 0 || /^\s+$/.test(val)) ? false : true;
-            // return ok;
-            return val !== undefined &&
-                    val !== null &&
-                    !/^\s+$/.test(val);
+            return val !== undefined && val !== null && val.length > 0 && !/^\s+$/.test(val);
         },
         email : function(val){
             var ok = !(/^\w([\w.\-]*\w)?@[a-zA-Z0-9]([\w.\-]*\w)?\.[a-zA-Z]{2,3}$/.test(val)) ? false : true;
@@ -30,29 +26,9 @@ HTMLFormElement.prototype.validate = function(){
     var textarea = this.querySelectorAll('textarea');
     var password = this.querySelectorAll('.password');
     
-    var validateForm = function(e) {
+    var validate = function(e) {
         console.log('Validando funcion..');
 
-        var errors = [];
-
-        for (var i = 0; i < required.length; i++) {
-            var input=required.item(i);
-
-            if (input=== 'chekbox' && !input.checked){
-                errors.push(this.name + 'nop está marcado');
-            else if (input=== 'password'){
-                if (!validator.required(input.value))
-                    errors.push(this.name + ' no es un password válido');
-                }
-             }   else{
-                if (!validator.required(input.value)){
-                    errors.push(this.name + ' no es un password válido');
-                
-                }
-             }
-            }
-
-/*
         //si hay errores pararlo
         e.preventDefault();
 
@@ -102,17 +78,8 @@ HTMLFormElement.prototype.validate = function(){
             //hacer el submit
         }
 
-        */
+        
     };
 
-    var validateRequired = function()
-    {
-
-    };
-
-    this.addEventListener('submit', validateForm, false);
-    //para el onblur
-    for (var i = required - 1; i >= 0; i--) {
-        required.addEventListener('blur', validateRequired, false);
-    };
+    this.addEventListener('submit', validate, false);
 };
