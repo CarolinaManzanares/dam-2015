@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>"Reproductor de Vídeo</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <script src="assets/js/app.js"></script>
+        
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <video id = "player">
+                <source src="assets/videos/Teahupoo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <source src="assets/videos/Teahupoo.webm" type='video/webm; codecs="vp8, vorbis"'>
+            </video>
+            
+            <progress id="progress" min="0" max="100"></progress>
+            <input type="range" id="volumen">
+            <input class="btn btn-default" type="button" value="Iniciar" id="iniciar">
+            <input class="btn btn-default" type="button" value="Pausa" id="pausa">
+            <input class="btn btn-default" type="button" value="Parar" id="parar">
+            <input class="btn btn-default" type="button" value="Avanzar" id="avanzar">
+            <input class="btn btn-default" type="button" value="Retroceder" id="retroceder">
+            <input class="btn btn-default" type="button" value="Inicio" id="inicio">
+            <input class="btn btn-default" type="button" value="Fin " id="fin">
+            <input class="btn btn-default" type="button" value="Pantalla completa" id="pantallacompleta">
+        </div>
+
+
+
+
+
+    </body>
+</html>
